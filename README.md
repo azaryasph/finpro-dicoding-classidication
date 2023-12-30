@@ -9,6 +9,15 @@ To run `Final Project Image Classification.ipynb`: <br>
 - first, you have to download the notebook
 - then you have to run it on jupyter notebook web so you can insert the picture on the model later
 
+To run `Final_Project_Image_Classification_Colab.ipynb`:
+- You can go to this google colaboratory link : https://colab.research.google.com/drive/1-Mcc5wKTCj2Euf8Gbp8Zzy9ZEo8-CtTz?usp=sharing
+to download and run on your new jupyter file on colab.
+- To Download the notebook on colab :<br> 
+    * go to `File` on your upper left 
+    * find `Download`
+    * Download .ipynb
+    * you ready to go to import the downloaded file on your own notebook.
+
 ## Dataset
 The Dataset contains image of rock, paper, and siccors hand gestures.
 Dataset Download link : https://github.com/azaryasph/finpro-dicoding-classification/raw/main/rockpaperscissors.zip?download=
@@ -24,15 +33,3 @@ The Convolutional 2D layers are used to create a convolution kernel that is conv
 The model was compiled with the 'adam' optimizer and the 'sparse_categorical_crossentropy' loss function. The 'adam' optimizer is an algorithm for first-order gradient-based optimization of stochastic objective functions, based on adaptive estimates of lower-order moments. The 'sparse_categorical_crossentropy' loss function is used when there are two or more label classes and the classes are exclusive.
 
 After training the model for several epochs, it achieved an accuracy of 98%. This high accuracy indicates that the model is very effective at predicting the hand gestures from the images.
-
-## Results
-Share the results of your project. This could include accuracy scores, confusion matrices, or any other metrics you used to evaluate your model.
-
-## Conclusion
-Summarize what you learned from this project and any future work you plan to do.
-
-## How to Run
-Provide instructions on how to run your notebook. Include any necessary prerequisites (like Python version, required libraries, etc.)
-
-## References
-Cite any sources you used while working on this project.
