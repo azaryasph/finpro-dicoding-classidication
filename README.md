@@ -3,6 +3,23 @@
 ## Introduction
 In this project I'm developing a Deep Learning model to predict what hand gestrues (Rock, Paper, Scissors) that showed to the model
 
+## Requirements
+
+This project requires the following software and Python libraries:
+
+- Python (3.6 or higher)
+- Jupyter Notebook
+- TensorFlow (2.0 or higher)
+- Keras
+- NumPy
+- Matplotlib
+- Scikit-Learn
+
+You can install the required packages using pip:
+
+```bash
+pip install jupyter tensorflow keras numpy matplotlib scikit-learn
+```
 
 ## Instruction
 To run `Final Project Image Classification.ipynb`: <br>
@@ -24,12 +41,13 @@ Dataset Download link : https://github.com/azaryasph/finpro-dicoding-classificat
 
 ## Model
 
-The model used in this project is a Sequential Model from the Keras library. This model is a linear stack of layers that is very suitable for a plain stack of layers where each layer has exactly one input tensor and one output tensor.
+The model used in this project is a Sequential Model from the Keras library. This model is a linear stack of layers, making it suitable for a plain stack of layers where each layer has exactly one input tensor and one output tensor.
 
-The model was trained using a dataset of images of rock, paper, and scissors hand gestures. The images were preprocessed and then fed into the model. The model consists of several layers including Convolutional 2D layers, MaxPooling layers, and Dense layers.
+The model consists of several types of layers:
 
-The Convolutional 2D layers are used to create a convolution kernel that is convolved with the layer input to produce a tensor of outputs. The MaxPooling layers are used to downscale the input along its spatial dimensions (height and width) by taking the maximum value over an input window for each dimension along the features axis. The Dense layers are regular densely-connected NN layers which output the array of transformed data.
-
-The model was compiled with the 'adam' optimizer and the 'sparse_categorical_crossentropy' loss function. The 'adam' optimizer is an algorithm for first-order gradient-based optimization of stochastic objective functions, based on adaptive estimates of lower-order moments. The 'sparse_categorical_crossentropy' loss function is used when there are two or more label classes and the classes are exclusive.
+- Convolutional 2D layers: These layers create a convolution kernel that is convolved with the layer input to produce a tensor of outputs.
+- MaxPooling layers: These layers downscale the input along its spatial dimensions (height and width) by taking the maximum value over an input window for each dimension along the features axis.
+- Dense layers: These are regular densely-connected NN layers which output the array of transformed data.
+The model is compiled with the 'adam' optimizer and the 'sparse_categorical_crossentropy' loss function. The 'adam' optimizer is an algorithm for first-order gradient-based optimization of stochastic objective functions, based on adaptive estimates of lower-order moments. The 'sparse_categorical_crossentropy' loss function is used when there are two or more label classes and the classes are exclusive.
 
 After training the model for several epochs, it achieved an accuracy of 98%. This high accuracy indicates that the model is very effective at predicting the hand gestures from the images.
